@@ -194,7 +194,7 @@ public class Processor {
         //dataObjects.forEach(System.out::println);
         //dataObjects.get(1);
        //for (DataObject data : dataObjects) {
-           repository.save(object);
+           //repository.save(object);
            //System.out.println(data);
        // }
        // dataObjects.
