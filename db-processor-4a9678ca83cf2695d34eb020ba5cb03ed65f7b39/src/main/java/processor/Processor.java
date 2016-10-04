@@ -78,9 +78,6 @@ public class Processor {
     public void listHeader(DicomObject dObject) {
        List<DataObject> dataObjects = new ArrayList<>();
         // Stack pilha = new Stack();
-        //variaveis
-        //lala
-        //que foda
         ArrayList patient = new ArrayList();
         ArrayList study = new ArrayList();
         ArrayList tPatient = new ArrayList();
