@@ -26,8 +26,6 @@ public class Processor {
         System.out.println("Processador de texto para uma estrutura de banco de dados.");
         System.out.println("==========================================================");
 
-        //String filename = "data.txt";
-
 
         DicomObject dObject = null;
 
@@ -86,7 +84,6 @@ public class Processor {
         Iterator<DicomElement> iter = dObject.datasetIterator();
         DataObject object = new DataObject();
 
-        //enquanto
         while (iter.hasNext()) {
             DicomElement element = iter.next();
             int tag = element.tag();
@@ -97,7 +94,7 @@ public class Processor {
                 String tagVR = dObject.vrOf(tag).toString();
                 if (!(tagVR.equals("SQ"))) {
                     tagValue = dObject.getString(tag);
-                    //dataObjects.add(object);
+
                     switch (tagAddr) {
                         case "(0010,0010)":
                             System.out.println(tagName + " = " + tagValue);
