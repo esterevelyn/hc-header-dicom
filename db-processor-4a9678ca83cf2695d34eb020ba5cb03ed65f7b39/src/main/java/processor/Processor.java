@@ -86,6 +86,7 @@ public class Processor {
         Iterator<DicomElement> iter = dObject.datasetIterator();
         DataObject object = new DataObject();
 
+        //enquanto
         while (iter.hasNext()) {
             DicomElement element = iter.next();
             int tag = element.tag();
