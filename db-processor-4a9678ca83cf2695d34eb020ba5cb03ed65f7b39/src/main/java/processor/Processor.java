@@ -17,7 +17,10 @@ import java.util.*;
 public class Processor {
 
     @Autowired
-   private DataObjectRepository repository;
+    private DataObjectRepository repository;
+    private DataObjectRepository repositoryP;
+    private DataObjectRepository repositoryS;
+
 
     @PostConstruct
     public void init() {
@@ -42,7 +45,7 @@ public class Processor {
    // }
 
    // public void listHeader(DicomObject dObject) {
-       List<DataObject> dataObjects = new ArrayList<>();
+        List<DataObject> dataObjects = new ArrayList<>();
         Iterator<DicomElement> iter = dObject.datasetIterator();
         DataObject object = new DataObject();
 
